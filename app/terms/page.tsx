@@ -1,3 +1,50 @@
-import Link from "next/link";
-export const metadata={title:"Participation & texts"};
-export default function Terms(){return <section className="section"><div className="container prose"><div className="eyebrow">A WELCOMING TABLE FOR EVERYONE</div><h1>A few things to know.</h1><h2>Join in kindly</h2><p>Everyone in the community is welcome. No church affiliation or game experience is required. Treat other guests with kindness, include newcomers, and keep competition friendly. A responsible adult must remain with children.</p><h2>Seats and waitlists</h2><p>Your private RSVP page shows whether you have a seat, are waiting, or have a limited-time offer to claim. An offer is not a confirmed reservation until you claim it. Please cancel when plans change. Organizers may adjust capacity or event arrangements and will make reasonable efforts to communicate changes.</p><h2>Food and allergies</h2><p>Food preferences help with planning but are not a guarantee that a particular food or an allergen-free option is available. Speak directly with the organizer about severe allergies or accommodation needs before attending.</p><h2>Optional text updates</h2><p>When enabled, Sedona Game Night can send RSVP confirmations, waitlist and seat-offer updates, game-night reminders, and invitations to a new game night. Message frequency varies, typically around two to four per month. Message and data rates may apply. Consent is optional and is not required to RSVP or attend. Reply STOP to opt out or HELP for help. Carriers are not responsible for delayed or undelivered messages.</p><p>Keep your private RSVP link even when you opt into texts. A text may be delayed or not delivered. Your reservation page is the place to check your current status and any offer deadline.</p><h2>Need help?</h2><p>Ask a Sedona Game Night organizer at Summit Life Church or Rock of Ages Church. Do not post your private RSVP link in a public group.</p><p><Link href="/privacy">Read the privacy notice</Link></p></div></section>}
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Participation & Mobile Terms",
+  description: "Sedona Game Night participation and optional SMS terms, message frequency, charges, consent, opt-out, and support."
+};
+
+export default function TermsPage() {
+  return (
+    <section className="section">
+      <div className="container prose">
+        <div className="eyebrow">A WELCOMING TABLE FOR EVERYONE</div>
+<h1>Participation &amp; Mobile Terms of Service</h1>
+<p><strong>Sedona Game Night</strong><br />Effective date: October 13, 2026</p>
+<p>Sedona Game Night is a community game-night program hosted with Summit Life Church and Rock of Ages Church in Sedona, Arizona. These terms describe participation and our optional text-message program.</p>
+<h2>Join in kindly</h2>
+<p>Everyone in the community is welcome. No church affiliation or game experience is required. Treat other guests with kindness, include newcomers, and keep competition friendly. A responsible adult must remain with children and complete reservations on their behalf.</p>
+<h2>Reservations, seats, and waitlists</h2>
+<p>Your private RSVP page shows whether your group has a confirmed seat, is waiting, or has an offer to claim. A seat offer is not a confirmed reservation until you claim it before the stated deadline. Please cancel when plans change. Organizers may adjust capacity, dates, or event arrangements and will make reasonable efforts to communicate changes.</p>
+<p>Your private RSVP link grants access to your reservation. Keep it private and save it so you can check your status or cancel even if a text message does not arrive.</p>
+<h2>Food and allergies</h2>
+<p>Food preferences help with planning but do not guarantee a particular food or an allergen-free option. Speak directly with an organizer about severe allergies or accommodation needs before attending.</p>
+<h2 id="mobile-terms">Sedona Game Night text-message program</h2>
+<p>By actively opting into Sedona Game Night texts, you agree to receive recurring automated SMS messages at the mobile number you provide. Messages may be sent using automated technology. The program is intended for adults using a number they own or are authorized to use.</p>
+<h3>What we send</h3>
+<ul><li>Reservation confirmations and cancellation updates.</li><li>Waitlist updates, available-seat offers, and offer-expiration notices.</li><li>Game-night reminders and requests to confirm attendance.</li><li>Invitations and announcements about upcoming Sedona Game Night events.</li></ul>
+<h3>Message frequency and charges</h3>
+<p>Message frequency varies, typically around two to four messages per month. Reservation changes, waitlist offers, or other activity may result in additional updates. Sedona Game Night does not charge for the text-message program, but your wireless carrier’s message and data rates may apply. Contact your carrier about your plan and charges.</p>
+<h3>How to opt in</h3>
+<p>To subscribe through the website, enter your mobile number, actively select the optional text-message consent checkbox, and submit the form. Complete any confirmation step requested by our messaging provider. The checkbox is not selected by default. If we offer another sign-up method, its consent disclosure will explain what action subscribes you.</p>
+<p>Consent to texts is not a condition of purchase, making a reservation, or attending an event. Providing a phone number or email address alone does not give text-message consent. You can attend and manage a reservation through the website without subscribing.</p>
+<h3>How to opt out</h3>
+<p>Reply <strong>STOP</strong> to any Sedona Game Night text to unsubscribe. You may receive a final confirmation of your opt-out; no further program texts will be sent unless you opt in again. Opting out of texts does not cancel your reservation. Use your private RSVP link to change or cancel attendance.</p>
+<p>Unchecking the text-message option on an RSVP stops future messages generated by this website for that reservation. Use STOP to unsubscribe from the messaging program through the provider. For assistance, email <a href="mailto:daniel@sedonagamenight.com">daniel@sedonagamenight.com</a>.</p>
+<h3>How to get help</h3>
+<p>Reply <strong>HELP</strong> to a Sedona Game Night text or email <a href="mailto:daniel@sedonagamenight.com">daniel@sedonagamenight.com</a>. You can also speak with a Sedona Game Night organizer at an event.</p>
+<h3>Your mobile number and message delivery</h3>
+<p>Please notify us if you change or give up the number you used to subscribe. If you get a new number, sign up using that number and give fresh consent.</p>
+<p>Message delivery depends on your carrier and messaging services and is not guaranteed. Carriers are not liable for delayed or undelivered messages. A text does not extend a seat-offer deadline or replace the status shown on your private reservation page.</p>
+<h3>Privacy</h3>
+<p>Our <a href="/privacy">Privacy Policy</a> explains how we collect and use your information. Mobile numbers and text-message opt-in or consent information are not sold or shared with other organizations for their own marketing. Necessary information may be shared with providers that operate and deliver our messaging service.</p>
+<h3>Program changes</h3>
+<p>We may change or discontinue the messaging program and will update these terms when needed. We will provide notice or obtain fresh consent when required. We do not treat an update to these terms as permission to expand your consent to unrelated messages.</p>
+<h2>Contact</h2>
+<p>For questions about an event or the text-message program, email <a href="mailto:daniel@sedonagamenight.com">daniel@sedonagamenight.com</a>. Please do not share passwords, sensitive personal details, or private RSVP links in public messages.</p>
+<p><a href="/privacy">Privacy Policy</a> · <a href="/rsvp">Back to game night</a></p>
+      </div>
+    </section>
+  );
+}
