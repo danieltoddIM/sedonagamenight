@@ -1,0 +1,4 @@
+import {createHmac,randomBytes,timingSafeEqual} from "node:crypto";
+export function equal(a:string,b:string){const x=Buffer.from(a),y=Buffer.from(b);return x.length===y.length&&timingSafeEqual(x,y)}
+export function signSession(secret:string,now=Date.now()){const payload=Buffer.from(JSON.stringify({expires:now+7*86400000,nonce:randomBytes(16).toString("hex")})).toString("base64url");return `${payload}.${createHmac("sha256",secret).update(payload).digest("base64url")}`}
+export function validSession(value:string,secret:string,now=Date.now()){try{const [payload,sig,...extra]=value.split(".");if(!payload||!sig||extra.length)return false;const expected=createHmac("sha256",secret).update(payload).digest("base64url");if(!equal(sig,expected))return false;const data=JSON.parse(Buffer.from(payload,"base64url").toString());return Number.isFinite(data.expires)&&data.expires>now&&data.expires<=now+7*86400000}catch{return false}}

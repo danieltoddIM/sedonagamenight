@@ -1,0 +1,4 @@
+import Link from "next/link";
+import Brand from "./Brand";
+import {hosts} from "@/lib/config";
+export default function Footer(){return <footer className="site-footer"><div className="container footer-top"><div><Link href="/" className="brand"><Brand/></Link><p>A little fun. A few new friends.<br/>A more connected Sedona.</p></div><div><h3>Find your place at the table</h3><div className="footer-links"><Link href="/rsvp">Join a game night</Link><Link href="/games">Vote &amp; suggest games</Link><Link href="/#about">About our community</Link></div></div><div><h3>Hosted with heart</h3><p>{hosts.join(" & ")}<br/>Everyone is welcome. No church affiliation needed.</p></div></div><div className="container footer-bottom"><span>&copy; {new Date().getFullYear()} Sedona Game Night</span><div><Link href="/privacy">Privacy</Link><Link href="/terms">Participation &amp; texts</Link><Link href="/admin">Organizers</Link></div></div></footer>}

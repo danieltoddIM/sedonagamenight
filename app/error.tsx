@@ -1,0 +1,1 @@
+"use client";export default function ErrorPage({reset}:{error:Error;reset:()=>void}){return <section className="section"><div className="container narrow"><h1>Something didn&apos;t load.</h1><p>Your information has not been changed by this page error. Please try again.</p><button className="btn" onClick={reset}>Try again</button></div></section>}
