@@ -20,4 +20,8 @@ RSVP persistence is separate from SMS. Durable queued jobs have deduplication, l
 
 ## Still needs operational confirmation
 
-Full build/typecheck with installed dependencies; live database and simultaneous-reservation tests; provider sender and flows; double opt-in/STOP/HELP; scheduler cadence; a real event; correct venue/address; photograph permission; privacy contact and retention policy. The shared organizer password and browser-level votes are deliberate initial-version limits, not an enterprise identity system.
+Full build/typecheck with installed dependencies; live database and simultaneous-reservation tests; provider sender and flows; double opt-in/STOP/HELP; scheduler cadence; a real event; correct venue/address; privacy contact and retention policy. The shared organizer password and browser-level votes are deliberate initial-version limits, not an enterprise identity system.
+
+## October 13, 2026 — CC0 landscape replacement
+
+Replaced the signed Thunder Mountain reference with the original CC0 Wikimedia Commons photograph by Eddiewexler. Updated the homepage, community-banner CSS, alt text, and both embedded images in the standalone preview. Removed the previous photo file and updated asset/license documentation. Preserved the previously confirmed venue address, 390 Dry Creek Rd, Sedona, AZ 86336, in the configuration and preview.

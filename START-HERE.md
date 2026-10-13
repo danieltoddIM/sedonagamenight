@@ -32,7 +32,7 @@ The precise screens and available plans may change; links to the official setup 
 
 **Capacity.** The original project deliberately allows a whole family to exceed the stated capacity when some seats remain. That behavior is retained and shown to organizers. For a hard room limit, set `waitlist.allowFamilyOverflow` to `false` in `lib/config.ts` before accepting registrations.
 
-**Photo permission.** The hero uses your actual supplied Thunder Mountain sunset photograph. It is not a generated landscape. Its visible photographer signature is retained in the image asset. Permission/licensing was not verified; obtain permission or replace it with an authorized photograph before public use. See `ASSETS.md`.
+**Homepage photo.** The homepage and community banner use the CC0 Wikimedia Commons Thunder Mountain sunset photograph by Eddiewexler. The original signed image has been removed. Source and license are documented in `ASSETS.md`.
 
 **Messaging.** SMS is optional and off by default. Adding a key alone will not send texts. Configure the sender, consent settings and event-triggered flows described in `KLAVIYO.md`, and test on a phone you control. This site does not send email.
 

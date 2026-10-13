@@ -138,7 +138,7 @@ Use a staging Supabase project and fake test events; send SMS only to a number y
 
 No payments, public attendee directory, email delivery, newsletter, account signup, per-user organizer authentication or visitor tracking service is included. Optional email addresses are stored only as entered; they are not emailed or subscribed. Reconfirming attendance is a guest action, not an automatically delivered reconfirmation request campaign.
 
-Before accepting real guests, supply a monitored contact method and a data retention/deletion policy, review the privacy and participation notices, confirm the venue and its accessibility, and verify photo permission. The notices are editable operating copy, not a certification of legal compliance. Dietary and optional church information remain private; avoid collecting detail you do not need.
+Before accepting real guests, supply a monitored contact method and a data retention/deletion policy, review the privacy and participation notices, confirm the venue and its accessibility, and consult `ASSETS.md` for the included CC0 photo provenance. The notices are editable operating copy, not a certification of legal compliance. Dietary and optional church information remain private; avoid collecting detail you do not need.
 
 ## Verification performed during preparation
 

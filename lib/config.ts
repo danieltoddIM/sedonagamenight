@@ -42,11 +42,11 @@ export const pizza = {
 
 export const location = {
   name: "Rock of Ages Church",
-  addressConfirmed: false, // Set true after confirming the full street address
+  addressConfirmed: true, // Confirmed by the organizer
 
-  address: "Sedona, Arizona", // Replace with verified street address before launch
+  address: "390 Dry Creek Rd, Sedona, AZ 86336",
   room: "", // Set only after the venue confirms the room
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rock+of+Ages+Church+Sedona+AZ",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=390+Dry+Creek+Rd+Sedona+AZ+86336",
 };
 
 export const hosts = ["Summit Life Church", "Rock of Ages Church"];
